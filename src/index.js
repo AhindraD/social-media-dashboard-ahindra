@@ -1,13 +1,10 @@
 import ReactDOM from 'react-dom/client';
-import Builder from './components/Builder';
+import Dashboard from './components/Dashboard';
 import './style.css';
-//import { BrowserRouter } from "react-router-dom";
 
 function Run() {
   return (
-    <BrowserRouter>
-      <Builder />
-    </BrowserRouter>
+    <Dashboard/>
   )
 }
 
