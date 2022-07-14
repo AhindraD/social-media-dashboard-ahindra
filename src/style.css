@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+:root{
+    --darkBG:#1d2029;
+    --darkCardBG:#252b43;
+}
+
 body{
     font-family: 'Inter', sans-serif;
+    background-color: var(--darkBG);
 }
