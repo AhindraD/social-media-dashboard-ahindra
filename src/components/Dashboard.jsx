@@ -17,7 +17,7 @@ function Dashboard(props) {
                     </div>
                 </div>
                 <main className="big">
-                    <BigCards />
+                    <BigCards data={DATA.big} />
                 </main>
             </section>
             <section className="overview">
@@ -25,7 +25,7 @@ function Dashboard(props) {
                     <p className="h2">Overview - Today</p>
                 </div>
                 <main className="small">
-                    <SmallCards/>
+                    <SmallCards data={DATA.small} />
                 </main>
             </section>
         </div>
