@@ -1,5 +1,6 @@
 import BigCards from "./BigCards";
 import SmallCards from "./SmallCards";
+import DATA from "../DATA";
 
 function Dashboard(props) {
 

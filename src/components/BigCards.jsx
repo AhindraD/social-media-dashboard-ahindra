@@ -13,15 +13,6 @@ function BigCards(props) {
             <section className="facebook">
 
             </section>
-            <section className="twitter">
-
-            </section>
-            <section className="insta">
-
-            </section>
-            <section className="youtube">
-
-            </section>
         </div>
     )
 }
