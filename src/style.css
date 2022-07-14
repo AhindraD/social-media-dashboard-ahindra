@@ -53,16 +53,17 @@ body {
 }
 
 .h1top {
-    font-size: 25px;
+    font-size: 29px;
     letter-spacing: 3px;
     font-weight: 700;
     margin-bottom: 7px;
+    -webkit-text-stroke: 0.9px #00bbff;
 }
 
 .h1bottom {
     color: var(--greyFont);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .toggle {
@@ -209,6 +210,7 @@ body {
     align-self: flex-start;
     padding: 0 42px;
     text-align: left;
+    -webkit-text-stroke: 0.6px #00bbff;
 }
 
 .small-card {
