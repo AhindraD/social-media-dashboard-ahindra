@@ -10,6 +10,7 @@
     --darkBG: #1d2029;
     --darkCardBG: #252b43;
     --darkFont: hsl(0, 0%, 100%);
+    --greyFont: rgba(240, 248, 255, 0.626);
 }
 
 body {
@@ -32,28 +33,206 @@ body {
 .overview {
     height: 45vh;
     width: 80vw;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
 }
 
+
+
+/* T-O-P */
 .head1 {
     height: 60px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 0 42px;
+}
+
+.h1top {
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.h1bottom {
+    color: var(--greyFont);
+    font-size: 14px;
+    font-weight: 600;
+}
+.toggle{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 5px;
+}
+.dark{
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--greyFont);
+}
+.switch{
+    height: 23px;
+    width: 50px;
+    border-radius: 12px;
+    background-color: cyan;
 }
 
 .big {
     height: calc(45vh - 65px);
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 30px;
+    gap: 30px;
+}
+
+.big-card {
+    width: 250px;
+    height: 210px;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: var(--darkCardBG);
+    padding: 15px;
+}
+
+.bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+}
+
+.facebook .bar {
+    background-color: #1a8ff3;
+}
+
+.twitter .bar {
+    background-color: #1ba2f2;
+}
+
+.instagram .bar {
+    background: rgb(253, 196, 104);
+    background: linear-gradient(90deg, rgba(253, 196, 104, 1) 0%, rgba(223, 73, 150, 1) 100%);
+}
+
+.youtube .bar {
+    background-color: #c30329;
+}
+
+.user,
+.trend {
+    display: flex;
+    gap: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.trend {
+    gap: 7px;
+}
+
+.user-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--greyFont);
+}
+
+.count {
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 3px;
+}
+
+.type {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+    color: var(--greyFont);
+}
+
+.trend img {
+    height: 5px;
+    object-fit: cover;
+}
+
+.up {
+    font-size: 11px;
+    font-weight: 600;
+    color: #35a992;
+}
+
+.down {
+    font-size: 11px;
+    font-weight: 600;
+    color: #c0062e;
+}
+
+
+
+/* B-O-T-T-O-M */
+.small {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+}
+
+.head2 {
+    width: 100%;
+    font-size: 23px;
+    font-weight: 700;
+    align-self: flex-start;
+    padding: 0 30px;
+    text-align: left;
+}
+
+.small-card {
+    width: 250px;
+    height: 115px;
+    background-color: var(--darkCardBG);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.small-top,
+.small-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.s-type{
+    color: var(--greyFont);
+    font-size: 13px;
+    font-weight: 600;
+}
+.s-count{
+    font-weight: 600;
+    font-size: 27px;
 }

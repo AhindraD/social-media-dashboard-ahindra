@@ -14,18 +14,20 @@ function Dashboard(props) {
                         <p className="h1bottom">Total Followers: 23,004</p>
                     </div>
                     <div className="toggle">
+                        <p className="dark">Dark Mode</p>
+                        <div className="switch"></div>
                     </div>
                 </div>
                 <main className="big">
-                    <BigCards data={DATA.big} />
+                    {DATA.big.map((elem, ind) => { return <BigCards data={DATA.big[ind]} /> })}
                 </main>
             </section>
             <section className="overview">
                 <div className="head2">
-                    <p className="h2">Overview - Today</p>
+                    Overview - Today
                 </div>
                 <main className="small">
-                    <SmallCards data={DATA.small} />
+                    {DATA.small.map((elem, ind) => { return <SmallCards data={DATA.small[ind]} /> })}
                 </main>
             </section>
         </div>
