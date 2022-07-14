@@ -1,17 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --darkBG:#1d2029;
-    --darkCardBG:#252b43;
+:root {
+    --darkBG: #1d2029;
+    --darkCardBG: #252b43;
+    --darkFont: hsl(0, 0%, 100%);
 }
 
-body{
+body {
     font-family: 'Inter', sans-serif;
     background-color: var(--darkBG);
+    color: var(--darkFont);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.dash,
+.overview {
+    height: 45vh;
+    width: 80vw;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.head1 {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.big {
+    height: calc(45vh - 65px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
 }
