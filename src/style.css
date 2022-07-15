@@ -27,6 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding-top: 30px;
 }
 
 .dash,
@@ -47,7 +48,7 @@ body {
 
 /* T-O-P */
 .head1 {
-    height: 60px;
+    min-height: 60px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -257,7 +258,7 @@ body {
     }
 } */
 
-@media screen and (max-width:1150px) {
+@media screen and (max-width:550px) {
 
     .container {
         min-height: 2700px;
@@ -268,15 +269,11 @@ body {
     .dash,
     .overview {
         height: auto;
-        min-height: 1300px;
+        min-height: 1330px;
         padding: 50px 0;
         width: 100vw;
         gap: 50px;
         justify-content: flex-start;
-    }
-
-    .head1 {
-        min-height: 150px;
     }
 
     .big {
