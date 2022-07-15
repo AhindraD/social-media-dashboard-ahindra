@@ -245,3 +245,35 @@ body {
     font-weight: 600;
     font-size: 27px;
 }
+
+
+
+@media screen and (max-width:480px) {
+
+    .container {
+        min-height: 2700px;
+        gap: 50px;
+        justify-content: flex-start;
+    }
+
+    .dash,
+    .overview {
+        height: auto;
+        min-height: 1300px;
+        padding: 50px 0;
+        width: 100vw;
+        gap: 50px;
+        justify-content: flex-start;
+    }
+
+    .head1 {
+        min-height: 150px;
+    }
+
+    .big {
+        min-height: 1000px;
+    }
+    .overview{
+        min-height: 1350px;
+    }
+}

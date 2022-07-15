@@ -19,7 +19,7 @@ function Dashboard(props) {
                     </div>
                 </div>
                 <main className="big">
-                    {DATA.big.map((elem, ind) => { return <BigCards data={DATA.big[ind]} /> })}
+                    {DATA.big.map((elem, ind) => { return <BigCards key={`big-${ind}`} data={DATA.big[ind]} /> })}
                 </main>
             </section>
             <section className="overview">
@@ -27,7 +27,7 @@ function Dashboard(props) {
                     Overview - Today
                 </div>
                 <main className="small">
-                    {DATA.small.map((elem, ind) => { return <SmallCards data={DATA.small[ind]} /> })}
+                    {DATA.small.map((elem, ind) => { return <SmallCards key={`small-${ind}`} data={DATA.small[ind]} /> })}
                 </main>
             </section>
         </div>
