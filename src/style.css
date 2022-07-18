@@ -7,16 +7,16 @@
 }
 
 :root {
-    --darkBG: #1d2029;
-    --darkCardBG: #252b43;
-    --darkFont: hsl(0, 0%, 100%);
-    --greyFont: rgba(240, 248, 255, 0.626);
+    --BG: #1d2029;
+    --CardBG: #252b43;
+    --primaryFont: hsl(0, 0%, 100%);
+    --secondaryFont: hsl(228, 34%, 66%);
+    --toggle: #1d2029;
+    --toggleLeft: 26px;
 }
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: var(--darkBG);
-    color: var(--darkFont);
 }
 
 .container {
@@ -28,6 +28,18 @@ body {
     align-items: center;
     gap: 20px;
     padding-top: 30px;
+    background-color: var(--BG);
+    color: var(--primaryFont);
+    transition: all 300ms ease-in-out;
+}
+
+.light-theme {
+    --BG: hsl(0, 0%, 100%);
+    --CardBG: hsl(227, 47%, 96%);
+    --primaryFont: hsl(230, 17%, 14%);
+    --secondaryFont: hsl(228, 12%, 44%);
+    --toggle: hsl(0, 0%, 100%);
+    --toggleLeft: 3px;
 }
 
 .dash,
@@ -65,7 +77,7 @@ body {
 }
 
 .h1bottom {
-    color: var(--greyFont);
+    color: var(--secondaryFont);
     font-size: 14px;
     font-weight: 700;
 }
@@ -80,15 +92,28 @@ body {
 .dark {
     font-size: 13px;
     font-weight: 600;
-    color: var(--greyFont);
+    color: var(--secondaryFont);
 }
 
 .switch {
-    height: 23px;
+    height: 26px;
     width: 50px;
-    border-radius: 12px;
+    border-radius: 17px;
     background-color: cyan;
     background: linear-gradient(90deg, rgb(0, 132, 255) 0%, rgb(1, 248, 170) 100%);
+    position: relative;
+    cursor: pointer;
+}
+
+.circle {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--toggle);
+    top: 2.7px;
+    left: var(--toggleLeft);
+    transition: left 200ms ease-in-out;
 }
 
 .big {
@@ -114,7 +139,7 @@ body {
     position: relative;
     border-radius: 7px;
     overflow: hidden;
-    background-color: var(--darkCardBG);
+    background-color: var(--CardBG);
     padding: 15px;
 }
 
@@ -158,7 +183,7 @@ body {
 .user-name {
     font-size: 13px;
     font-weight: 600;
-    color: var(--greyFont);
+    color: var(--secondaryFont);
 }
 
 .count {
@@ -174,7 +199,7 @@ body {
     letter-spacing: 5px;
     margin-bottom: 22px;
     text-transform: uppercase;
-    color: var(--greyFont);
+    color: var(--secondaryFont);
 }
 
 .trend img {
@@ -220,7 +245,7 @@ body {
 .small-card {
     width: 250px;
     height: 115px;
-    background-color: var(--darkCardBG);
+    background-color: var(--CardBG);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,7 +265,7 @@ body {
 }
 
 .s-type {
-    color: var(--greyFont);
+    color: var(--secondaryFont);
     font-size: 13px;
     font-weight: 600;
 }
@@ -259,10 +284,15 @@ body {
 } */
 
 @media screen and (max-width:550px) {
+    .toggle {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
 
     .container {
         min-height: 2700px;
-        gap: 50px;
+        gap: 0px;
         justify-content: flex-start;
     }
 

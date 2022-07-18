@@ -1,12 +1,13 @@
 import BigCards from "./BigCards";
 import SmallCards from "./SmallCards";
 import DATA from "../DATA";
+import { useState } from "react";
 
 function Dashboard(props) {
-
+    let [darkActive, setDarkActive] = useState(true);
 
     return (
-        <div className="container">
+        <div className={darkActive ? "container" : "container light-theme"}>
             <section className="dash">
                 <div className="head1">
                     <div className="h1">
@@ -15,7 +16,9 @@ function Dashboard(props) {
                     </div>
                     <div className="toggle">
                         <p className="dark">Dark Mode</p>
-                        <div className="switch"></div>
+                        <div className="switch" onClick={() => setDarkActive(!darkActive)}>
+                            <div className="circle"></div>
+                        </div>
                     </div>
                 </div>
                 <main className="big">
