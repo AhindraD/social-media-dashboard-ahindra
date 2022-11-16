@@ -1,4 +1,5 @@
 # Frontend Mentor - Social media dashboard with theme switcher
+## Deployed here: https://social-media-dashboard-ahindra.vercel.app/
 
 ![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
 
